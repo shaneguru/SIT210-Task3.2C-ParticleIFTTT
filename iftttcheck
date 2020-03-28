@@ -1,0 +1,16 @@
+int lux;
+
+void setup() {
+
+    Particle.variable("lux", &lux, INT);
+
+}
+
+void loop() {
+    
+    lux = (random(0.5, 150000));
+    
+    delay(10);
+   
+
+}
